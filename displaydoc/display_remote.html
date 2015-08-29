@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>perthblank.in</title>
+  <meta name="description" content="This is perthblank's personal space, welcome!" />
+  <meta name="keywords" content="perthblank" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo"><h1>PERTHBLANK.IN</h1></div>
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li><a href="../index.html">home</a></li>
+          <li class="current"><a href="../display.html">display</a></li>
+          <li ><a href="../blog.html">post</a></li>
+          <li ><a href="../about.html">about me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+
+      <div id="aboutmecount">
+		<h2> Remote Game Control with Gyroscope and Android </h2>
+
+			<h4>Abstract 摘要:</h4>
+			Use Android phone and an external gyrosrope to contorl a game scene built with Irrlicht.<br/>
+			用安卓手机与一个外置陀螺仪控制一个游戏场景.场景用Irrlich搭建 <br/><br/><br/>
+
+
+			<h4>Detail 细节:</h4>
+			Use the phone to control the angle and directions of the view, and use the gyroscope to go forward or backward.<br/>
+			用手机控制方向，用陀螺仪控制前后走动. <br/><br/><br/>
+
+
+			<h4>Parameter 参数:</h4>
+			<ul>
+				<li><strong>Game Engine:</strong> Irrlicht</li>
+				<li><strong>OS:</strong> Ubuntu 14.04 + Android 4.2</li>
+				<li><strong>Device:</strong> ThankPad + Android phone + Gyroscope with bluetooth</li>
+
+			</ul>
+
+
+			<h4>Keywords 关键技术:</h4>
+			<ul>
+				<li><strong>C++ </strong>  </li>
+				<li><strong>Android </strong>  </li>
+				<li><strong>Bluetooth</strong> </li>
+
+			</ul>
+
+
+			<h4>Demo 样例:</h4>
+			<img src="attach/direction.gif"/>
+			<br/>
+			Direction Control
+			<br/>
+			<br/>
+			<br/>
+			<img src="attach/walk.gif"/>
+			<br/>
+			Walking Control
+
+
+      </div>
+    </div>
+    <footer>
+      <p>Protect yourself</p>
+      <p>perthblank.in &copy 2015 , power by my portfolio</p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
+</body>
+</html>
