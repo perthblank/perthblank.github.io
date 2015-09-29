@@ -26,6 +26,31 @@
       </nav>
     </header>
     <div id="site_content" >
+    
+    
+    
+      <div id="content">
+      	<br/><br/> 	
+		Greetings!<br/>
+		欢迎！<br/>
+		这是perthblank的个人网站，包括我的资料，相关工作介绍以及少量博文。希望在这里可以找到你想要的东西。<br/>
+
+		<strong>更多技术文章请移步我的<a href="http://blog.csdn.net/u013802033" target="_blank"> CSDN 博客(链接)</a></strong><br/>
+	     或者查看我的<a href="attach/CV_DU_HUIMIN_CN_EN.pdf"><strong>简历</strong></a>
+	     <br/> <br/>
+
+		This blog is my personal space presenting information and relative introductions about me. For more technical posts, please visit my <a href="http://blog.csdn.net/u013802033" title="CSDN blog" target="_blank">CSDN blog (link)</a>(which is almost written in Chinese Language).<br/>
+		Or you may like to check my <a href="attach/CV_DU_HUIMIN_CN_EN.pdf"><strong>Resume</strong></a>
+		<br/> <br/>
+
+		联系我：coreydu@foxmail.com<br/>
+
+		Contact:  coreydu@foxmail.com<br/>
+
+		
+      </div>
+    
+    
       <div id="sidebar_container">
       <h2>&nbsp;&nbsp;&nbsp;相关实践陈列</h2>
        <h3>&nbsp;&nbsp;&nbsp;图形 & 游戏 & 可视化 & 交互</h3>
@@ -63,26 +88,7 @@
 	  
 	 
 	  <div class="inner_copyright">perthblank</div>
-      <div id="content">
-      	<br/><br/> 	
-		Greetings!<br/>
-		欢迎！<br/>
-		这是perthblank的个人网站，包括我的资料，相关工作介绍以及少量博文。希望在这里可以找到你想要的东西。<br/>
-
-		<strong>更多技术文章请移步我的<a href="http://blog.csdn.net/u013802033" target="_blank"> CSDN 博客(链接)</a></strong><br/>
-	     或者查看我的<a href="attach/CV_DU_HUIMIN_CN_EN.pdf"><strong>简历</strong></a>
-	     <br/> <br/>
-
-		This blog is my personal space presenting information and relative introductions about me. For more technical posts, please visit my <a href="http://blog.csdn.net/u013802033" title="CSDN blog" target="_blank">CSDN blog (link)</a>(which is almost written in Chinese Language).<br/>
-		Or you may like to check my <a href="attach/CV_DU_HUIMIN_CN_EN.pdf"><strong>Resume</strong></a>
-		<br/> <br/>
-
-		联系我：coreydu@foxmail.com<br/>
-
-		Contact:  coreydu@foxmail.com<br/>
-
-		
-      </div>
+    
          <footer>
       <p>Protect yourself</p>
       <p>perthblank.in &copy 2015 , power by my portfolio</p>

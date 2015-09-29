@@ -1,0 +1,234 @@
+#myFooter 
+{
+padding:10px;	
+}
+
+.yScroll
+{
+overflow-y:scroll;
+}
+
+#mainCount{
+display:none;
+font-size:20px;
+}
+
+
+.pad
+{
+padding:5px
+}
+
+#articleCount
+{
+ border-width: 0px 0px 5px 0px;
+ border-style:groove;
+ padding:30px;
+ overflow-y:scroll;
+
+}
+
+.closureBlank
+{
+  border-radius: 5px 5px 0px 0px;
+  padding-left:10px;
+  min-width:50px;
+  width:150px;
+  border-width:0px 0px 2px 0px;  
+  color: #33EDBF;
+
+}
+
+.closureBlank-hover{
+	background-color:#33EDBF;
+	color:black;
+}
+
+.closureBlank:hover
+{
+cursor:pointer;
+}
+
+.closureBlank:focus
+{
+border:0px;
+outline:none;
+}
+
+.closureBlankSelected
+{
+	background-color:#33EDBF;
+	color:black;
+}
+
+
+.closureOption
+{}
+
+.closureOption:hover
+{
+	cursor:pointer;
+	color:#33EDBF;
+}
+
+.numberBtn
+{
+	border-radius: 2px 2px 2px 2px;
+	font-size: 15px;
+	background-color:#C6C6ED;
+	color:white;
+
+	float: left;
+    width: 22px;
+    height: 22px;
+	text-align:center;	
+}
+
+.numberBtn:hover
+{
+cursor:pointer;
+
+}
+
+.numberBtnOuter
+{
+padding-bottom:10px;
+border:0px solid black;
+width:22px;
+padding-bottom:25px;
+height:32px;
+display: inline-block;
+margin:5px
+}
+
+.numberBtnSelected
+{
+background-image:url(img/t22.jpg);
+background-repeat:no-repeat;
+background-position:bottom;
+}
+
+#numberList
+{
+list-style-type: none;
+padding-bottom:10px
+}
+
+#numberToolbar
+{
+margin-left:auto;
+margin-right:auto;
+width:400px;
+}
+
+.del
+{
+	text-decoration: line-through;
+}
+
+
+#resultPanel
+{
+	max-width:800px;
+	background-color:white;
+	margin-left:auto;
+	margin-right:auto;
+	padding:20px
+}
+
+
+.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+    border: none;
+}
+
+
+#correctPercent
+{
+	font-size:50px;
+	color:#33EDBF;
+}
+
+.textCenter{
+text-align: center;
+}
+
+.wrongResult
+{
+color:#E8462B;
+}
+
+.wrongResultBtn
+{
+background-color:#E8462B;
+}
+
+.rightResult
+{
+color:#33EDBF;
+}
+
+.rightResultBtn
+{
+background-color:#33EDBF;
+}
+
+
+
+
+.outline-button, .outline-button:link, .outline-button:visited {
+background-color: transparent;
+border-radius: 20px;
+color: #33EDBF;
+border: 2px solid #33EDBF;
+padding-left:70px;
+padding-right:70px;
+}
+
+.outline-button:active, .outline-button:hover {
+background-color: #33EDBF;
+color: #fff
+}
+
+.hint
+{
+padding-left:10px;
+padding-right:10px;
+border-radius:5px;
+}
+
+
+#answerExpCount
+{
+display:none;
+padding:20px;
+}
+
+
+#resizeHandle
+{
+width:70px;
+height:22px;
+background-color:#ACB0A8;
+margin-left:auto;
+margin-right:auto;
+display:inline;
+text-align:center;
+font-size:18px;
+position:absolute;
+cursor:pointer;
+margin-left:200px;
+}
+
+
+#metacontent
+{
+padding:30px;
+
+}
+
+.highlight
+{
+background-color:#FFF647;
+}
+
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>完形填空</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bsdist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="style.css" rel="stylesheet" media="screen">
+ 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+ 	<body>
+	<div id="metacontent" class="container-fluid">
+		<h2>(原始数据)编辑页面</h2>
+		<h4>说明</h4>
+		
+		<ul>
+		<li class="pad">所有业务相关元素都是根据本页内容动态生成，没有任何硬编码的业务数据</li>
+		<li class="pad">元数据中文章中的空缺用五个连续下划线表示，用于识别</li>
+		<li class="pad">候选结果需要用逗号分开，并且不忽略空格（兼容词组）,生成下个页面时时顺序会被打乱</li>
+		<li class="pad">目前直接用JSON表示顺序排列的答案与解析,假设答案数目与空格数目相等</li>
+		<li class="pad">高亮的方法：选中一段文字，点击“添加高亮”，然后输入对应的空缺号码（正整数），然后会在文本中插入相应标签</li>
+		<li class="pad">目前仅在ubuntu/chrome下开发与测试，使用了bootstrap（样式与响应）与 jqueryUI（用了一个拖动函数来实现resize）</li>
+		
+		</ul>
+		<br/>
+		 <button type="button" class="goBtn btn btn-primary">进入答题页面</button>
+
+		<h2>主文 ( 五条下划线分割空缺)</h2>
+		默认设置了一个高亮，其他可以选中文字后点击&nbsp;
+		<button id="highlightBtn" type="button" class="btn btn-warning">添加高亮</button>
+		<br/>
+		<textarea id="artContent" cols="100" rows="10" class="yScroll"  >
+		It's the first question parents ask when their child is diagnosed with autism (自闭症). Will <span class="highlighted highlight_0">his future</span> brothers or sisters have a higher risk of 1 _____ it, too? According to the largest study of siblings (兄弟姐妹) in families with autism, the answer is yes. Among 664 children who had at least one older sibling with the developmental disorder, the 2 _____ risk of autism was nearly 19%, 3 _____ higher than previous sibling-recurrence estimates that were anywhere from 3% to 10%. Kids with more than one older autistic sibling had an even higher risk of the disorder: 32%. 
+		The 4 _____ suggest that genes play a key role in autism risk. But they also hint that other environmental factors 5 _____ by siblings, like influences in the womb (子宫), may be important as well. 
+		On the 6 _____ of the findings, the researchers recommend that doctors closely 7 _____ younger siblings of autistic children to pick up any early signs of the disorder, 8 _____ an unusually large head or delayed language development and communication skills. Evidence suggests that early 9_____ and diagnosis of autism can help children take advantage of therapies that can treat some of its 10_____
+
+		</textarea>
+
+		<br/>
+		<br/>
+		<h2>候选项 (seperated by ',')</h2>
+		<textarea id="artOptions" cols="100" rows="3" class="yScroll">common,results,consequently,basis,detection,monitor,symbols,average,dramatically,symptoms,reason,distributed,including,developing,shared
+</textarea>
+
+
+		<h2>答案数据 (in json format)</h2>
+		<textarea id="artAnswer" cols="100" rows="40" class="yScroll">{
+ "answers":[
+	 {
+	 "content":"developing",
+	 "explain":"第1题的文字解析"
+	 },
+	 {
+	 "content":"average",
+	 "explain":"第2题的文字解析"
+	 },
+	 {
+	 "content":"dramatically",
+	 "explain":"第3题的文字解析"
+	 },
+	 {
+	 "content":"results",
+	 "explain":"第4题的文字解析"
+	 },
+	 {
+	 "content":"shared",
+	 "explain":"第5题的文字解析"
+	 },
+	 {
+	 "content":"basis",
+	 "explain":"第6题的文字解析"
+	 },
+	 {
+	 "content":"monitor",
+	 "explain":"第7题的文字解析"
+	 },
+	 {
+	 "content":"including",
+	 "explain":"第8题的文字解析"
+	 },
+	 {
+	 "content":"detection",
+	 "explain":"第9题的文字解析"
+	 },
+	 {
+	 "content":"symptoms",
+	 "explain":"第10题的文字解析"
+	 }
+ ]
+ }
+</textarea>
+
+		<br/>
+		<br/>
+		<br/>
+		 <button  type="button" class="goBtn btn btn-primary">进入答题页面</button>
+		<div id="myFooter">
+		---by <a href="http://perthblank.in">perthblank</a>
+		</div>
+	</div>
+
+
+
+	<div id="mainCount" class="container-fluid">
+	
+	
+	
+	
+	
+      <nav class="navbar navbar-default" role="navigation" >
+        <div class="container">
+            <ul class="nav navbar-nav" >
+              <li class=""><a href="index.html"><span class="glyphicon glyphicon-arrow-left" ></span></a></li>
+              <li class=""><a href="#"><span class="glyphicon glyphicon-send" ></span></a></li>
+            </ul>
+            
+             <ul  class="nav navbar-nav " style="float:right">
+					
+              <li><button id="submitBtn" class="btn btn-default" href="#resultPanel" role="button"  data-toggle="modal">交卷</button></li>
+            </ul>
+            		
+        </div>
+      </nav>
+      
+      
+      <div id="resultPanel" class="modal fade textCenter" role="dialog" >
+				<div class="modal-header">
+					 
+					<h3>
+						<strong>成绩报告</strong>
+					</h3>
+				</div><br/>
+				<div id="correctPercent">
+				
+				</div>
+				<h4>正确率</h4>
+				<div>
+					<table id="answerResultTable" class="table borderless">
+					
+					</table>
+				</div>
+				<div >
+					 <button class="outline-button" data-dismiss="modal">查解析</button> 
+					 <button class="outline-button" >回列表</button> 
+				</div>
+			</div>
+      
+      
+      
+      <div id="articleCount">
+      	  <span><span class="glyphicon glyphicon-book" ></span>&nbsp; 点击空格处，选取恰当的单词</span><br/>
+		  <div id="articleCountInner">
+		  </div>
+	
+		
+      </div>
+   
+  		<div id="resizeHandle" >
+		  <span class="glyphicon glyphicon-align-justify" ></span>
+		  </div>
+      
+     
+      <div id="numberToolbar">
+      	<ul id="numberList">
+      	</ul>
+      </div>
+ 
+		
+		<div id="optionTableCount">
+		  <table id="optionTable" class="table table-bordered">
+
+		  </table>
+		</div>
+		
+		<div id="answerExpCount">
+		
+		<h4><strong>答案</strong></h4>
+		<div id="answerExpCountInner"></div>
+		</div>
+		
+		
+	</div>
+
+
+	</div>
+	</body>
+	
+	    <script src="js/jquery-1.9.1.js"></script>
+	    <script src="js/jquery-ui.js"></script>
+	
+	<script src="js/editPage.js"></script>
+	<script src="js/gen.js"></script>
+	
+    <script src="bsdist/js/bootstrap.min.js"></script>
+    <script src="bsdist/js/ie10-viewport-bug-workaround.js"></script>
+</html>
+			

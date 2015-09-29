@@ -1,0 +1,36 @@
+function highlightText() {
+ 
+  var textComponent = document.getElementById('artContent');
+
+  var selectedText;
+  // IE version
+  if (document.selection != undefined)
+  {
+    textComponent.focus();
+    var sel = document.selection.createRange();
+    selectedText = sel.text;
+   
+    
+  }
+  // Mozilla version
+  else if (textComponent.selectionStart != undefined)
+  {
+    var startPos = textComponent.selectionStart;
+    var endPos = textComponent.selectionEnd;
+    selectedText = textComponent.value.substring(startPos, endPos);
+    var blankId = prompt("要高亮 "+selectedText+" 给第几个空？");
+    if(!blankId)
+    {
+    	return;
+    }
+    blankId = blankId-1;
+    textComponent.value = textComponent.value.substring(0, startPos)
+    	+'<span class="highlight_'+blankId+'">'
+    	+selectedText
+    	+'</span>'
+    	+textComponent.value.substring(endPos, textComponent.value.length);
+    	
+  }
+   
+   
+}

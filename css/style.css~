@@ -105,12 +105,12 @@ ol li {
 }
 
 #main { 
-  width: 950px;
+  width: auto;
   margin: 20px auto 0 auto;
 }
 
 header { 
-  width: 950px;
+  width: auto;
   height: 105px;
 }
 
@@ -148,25 +148,26 @@ nav {
 } 
 
 #site_content { 
-  width: 950px;
-  overflow: hidden;
-  margin: 4px auto 0 auto;
+  width: auto;
+  height:auto;
+  margin: 10px;
   padding: 0;
-  background: #333;
+
   border-top: 0;
   border-bottom: 0;
 } 
 
 #sidebar_container { 
   float: left;
-  width: 450px;
+  max-width: 450px;
   padding: 0;
-  height: 450px;
+  height: auto;
+  
 }
 
 #content { 
   text-align: justify;
-  width: 444px;
+  max-width: 350px;
   padding: 0 0 5px 30px;
   margin: 0;
   float: left;
@@ -218,13 +219,13 @@ nav {
 }
 
 footer { 
-  width: 950px;
+  width: 60%;
   font: normal 140% 'News Cycle',  arial, sans-serif;
   height: 50px;
   padding: 10px 0 5px 0;
   text-align: center; 
   color: #FFF;
-  background: #444;
+
   font-size:15px;
 }
 
@@ -388,9 +389,32 @@ ul img {
 }
 
 #aboutmecount img{
-	left:auto;
-	right:auto;
+
 }
 
 
+.divCard{
+	background-color:#444;
+	padding:8px;
+	margin:10px;
+
+}
+
+
+
+
+@media screen and (max-width: 800px) { 
+#site_content {width:auto} 
+header{width:auto;}
+#sidebar_container{margin-left:10px;}
+
+
+} 
+
+@media screen and (min-width: 1000px) { 
+#site_content {width:1000px;} 
+header{width:1000px;}
+#sidebar_container{margin-left:20%;}
+#content{margin-top:70px;margin-left:}
+} 
 
