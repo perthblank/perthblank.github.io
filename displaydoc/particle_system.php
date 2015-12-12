@@ -26,9 +26,9 @@
 	<br/>
 
 
-	<img src="image/rain_out"/>
-	<img src="image/rain_in.gif"/><br/>
-	<img src="image/fireball"/>
-	<img src="image/galaxy"/>
+	<img src="images/rain_out"/>
+	<img src="images/rain_in.gif"/><br/>
+	<img src="images/fireball"/>
+	<img src="images/galaxy"/>
 		
       </div>
