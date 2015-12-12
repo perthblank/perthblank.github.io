@@ -8,7 +8,7 @@ function init(){
 		ev.preventDefault();
 		$("#site_content").fadeOut();
 		$("#dvHead").hide();
-		$("#site_content2").load(url)
+		$("#site_content2").load(url);
 			
 			});
 }
