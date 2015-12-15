@@ -49,7 +49,9 @@ Get the position of the camera (constant related to the role position) in the ma
 </p>
 
 <p>
-The code is been migrating, check it on my Chinese blog (Just Ignore the Chinese Words) <a href="http://blog.csdn.net/u013802033/article/details/46790521">http://blog.csdn.net/u013802033/article/details/46790521</a>
+<span class="seeCBlog"></span>
+<br/>
+<a href="http://blog.csdn.net/u013802033/article/details/46790521">http://blog.csdn.net/u013802033/article/details/46790521</a>
 </p>
 
 <br/>
@@ -73,3 +75,4 @@ The code is been migrating, check it on my Chinese blog (Just Ignore the Chinese
 
       </div>
     
+	<script src="displaydoc/dis_ini.js"></script>

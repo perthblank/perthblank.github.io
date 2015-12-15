@@ -29,7 +29,9 @@
 </p>
 
 <p>
-The code is been migrating, check it on my Chinese blog (Just Ignore the Chinese Words) <a href="http://blog.csdn.net/u013802033/article/details/48093531">http://blog.csdn.net/u013802033/article/details/48093531</a>
+<span class="seeCBlog"></span>
+<br/>
+<a href="http://blog.csdn.net/u013802033/article/details/48093531">http://blog.csdn.net/u013802033/article/details/48093531</a>
 </p>
 
 <br/>
@@ -53,3 +55,4 @@ The code is been migrating, check it on my Chinese blog (Just Ignore the Chinese
 
       </div>
     
+	<script src="displaydoc/dis_ini.js"></script>

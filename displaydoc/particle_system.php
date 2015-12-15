@@ -19,16 +19,20 @@
 		
 	<br/>
 	<br/>
-	see code at <a href="http://blog.csdn.net/u013802033/article/details/43704315">http://blog.csdn.net/u013802033/article/details/43704315</a>
+	<span class="seeCBlog"></span>
+<br/>
+	<a href="http://blog.csdn.net/u013802033/article/details/43704315">http://blog.csdn.net/u013802033/article/details/43704315</a>
 	
 	<br/>
 	<br/>
 	<br/>
 
 
-	<img src="images/rain_out"/>
-	<img src="images/rain_in.gif"/><br/>
-	<img src="images/fireball"/>
-	<img src="images/galaxy"/>
+	<img src="images/parsys/rain_out"/>
+	<img src="images/parsys/rain_in.gif"/><br/>
+	<img src="images/parsys/fireball"/>
+	<img src="images/parsys/galaxy"/>
 		
       </div>
+
+	<script src="displaydoc/dis_ini.js"></script>
