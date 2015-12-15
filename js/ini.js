@@ -2,16 +2,22 @@ $(document).ready(init);
 
 function init(){
 	$(".divCard").click(function(ev){
-		var url = $(this).children("a").attr("href");
-		//location.href=url;
-
 		ev.preventDefault();
-		$("#site_content").fadeOut();
-		$("#dvHead").hide();
-		$("#site_content2").load(url);
-		$("#site_content2").show();
-	
-		window.scroll(0,0);
+		var link = $(this).children("a");
+		var url = link.attr("href");
+
+		if(link.hasClass("inPageLink")){
+			$("#btn_project").click();
+			$("#site_content").fadeOut();
+			$("#dvHead").hide();
+			$("#site_content2").load(url);
+			$("#site_content2").show();
+			window.scroll(0,0);
+		}
+
+		else{
+			location.href=url;
+		}
 	
 	});
 
@@ -26,8 +32,6 @@ function init(){
 		$("#dvHead").show();
 		$("#site_content").show();
 	
-
-
 	});
 
 }
