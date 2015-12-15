@@ -3,31 +3,23 @@
       <div id="aboutmecount">
 
 			<h4>Abstract:</h4>
+		A FPS effect, when hitted, the target gives a flash
 <br/>
 <br/>
 			<h4>Detail:</h4>
 
 <p>	
-
+	Normally shooting can be classified into 2 type
 <ul>
 	<li>
+		Slow shoot: the bullet has a certain speed and usually the target has a period of time to escape
 	</li>
 	<li>
-	</li>
-	<li>
+		Fast shoot: the bullet is fast enough that once aimed and shoot, the target cannot escape
 	</li>
 </ul>
 
-</p>
-<p>	
-<h5>
-</h5>
-
-		</p>
-<p>	
-<h5>
-</h5>
-
+	What I'm doing within this demo is the 'Fast shoot', which is more popular than the other one
 </p>
 <p>	
 <h5>
@@ -55,7 +47,7 @@ The code is been migrating, check it on my Chinese blog (Just Ignore the Chinese
 
 
 			<h4>Demo:</h4>
-			<img src="images/irr/irr_role.gif"/>
+			<img src="images/irr/irr_shoot.gif"/>
 			<br/>
 
 
