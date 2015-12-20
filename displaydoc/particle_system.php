@@ -19,12 +19,6 @@
 		
 	<br/>
 	<br/>
-	<span class="seeCBlog"></span>
-<br/>
-	<a href="http://blog.csdn.net/u013802033/article/details/43704315">http://blog.csdn.net/u013802033/article/details/43704315</a>
-	
-	<br/>
-	<br/>
 	<br/>
 
 
