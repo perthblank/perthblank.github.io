@@ -419,7 +419,7 @@ header{width:auto;}
 @media screen and (min-width: 1000px) { 
 #site_content {width:1000px; margin:100px} 
 #site_content2 {width:1000px; margin-left:100px} 
-header{width:1000px;}
+header{width:800px;}
 #content{margin-top:70px;margin-left:}
 
 } 
@@ -443,4 +443,7 @@ header{width:1000px;}
 
 .imgDisMap{
 	width:400px;
+}
+
+#footerwrapper{
 }
