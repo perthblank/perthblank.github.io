@@ -2,6 +2,7 @@ $(document).ready(init);
 
 var strSeeCBlog = "The code is been migrating, check it on my Chinese blog (Just Ignore the Chinese Words:)) "
 
+/*
 var footerstr = '<footer><div class="inner_copyright">perthblank</div><p>Protect yourself</p><p>perthblank.in &copy; 2015, theme by <a href="http://www.css3templates.co.uk/"> my_portfolio </a></p><p><!-- GoStats JavaScript Based Code -->'+
 		'<!--'+
 		'<script type="text/javascript" src="http://gostats.cn/js/counter.js"></script>'+
@@ -14,10 +15,10 @@ var footerstr = '<footer><div class="inner_copyright">perthblank</div><p>Protect
 	'	-->'+
 	'	<!-- End GoStats JavaScript Based Code -->'+
 	'	</p></footer>';
-
-
+*/
 
 function loadContent(url){
+
 	$("#site_content").fadeOut();
 	$("#dvHead").hide();
 	$("#site_content2_in").load(url);
@@ -35,8 +36,7 @@ function init(){
 		var url = link.attr("href");
 
 		if(link.hasClass("inPageLink")){
-			$("#btn_project").click();
-			loadContent(url);
+			location.href="post?targ="+url;
 		}
 
 		else{

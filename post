@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>perthblank</title>
+  <meta name="description" content="This is perthblank's personal space, welcome!" />
+  <meta name="keywords" content="perthblank" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+		<nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current"><a href="index.html">home</a></li>
+          <li id="btn_project"><a href="index.html#site_content">project</a></li>
+        </ul>
+      </nav>
+    </header>
+
+	<br/>
+
+ 
+
+
+<div id="site_content2">
+<div id="site_content2_in">
+
+</div>
+ 
+	 <footer>
+	  <div class="inner_copyright">perthblank</div>
+      <p>Protect yourself</p>
+      <p>perthblank.in &copy; 2015, theme by <a href="http://www.css3templates.co.uk/"> my_portfolio </a></p>
+    </footer>
+
+
+</div>
+ 
+  </div><!-- mian-->
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+
+
+<script src="js/ini.js"></script>
+<script>
+var targs = new Array(
+	"about",
+	"nebula",
+	"pparticle",
+	"remote",
+	"glmap",
+	"irr_role",
+	"irr_shoot",
+	"mixer",
+	"particle_sys"
+);
+
+function intargs(targ){
+	for(t in targs){
+		if(targs[t] == targ) return true;
+	}
+	return false;
+}
+
+
+$(document).ready(function(){
+
+	var url = location.search;
+	if(url.indexOf("?")!=-1){
+		var Request = new Object();
+	　　var str = url.substr(1)
+	　　strs= str.split("&");
+	　　for(var i=0;i<strs.length;i++){
+	　　 　 Request[strs[i].split("=")[0]]=
+				unescape(strs[ i].split("=")[1]);
+	　　}
+		if(!Request["targ"] || !intargs(Request["targ"])) 
+			location.href="index.html";
+	
+		loadContent("displaydoc/"+Request["targ"] );
+	}
+	
+
+
+});
+
+</script>
+
+
+</body>
+
+
+</html>
