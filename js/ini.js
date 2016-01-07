@@ -36,7 +36,7 @@ function init(){
 		var url = link.attr("href");
 
 		if(link.hasClass("inPageLink")){
-			location.href="post?targ="+url;
+			location.href="post.html?targ="+url;
 		}
 
 		else{
