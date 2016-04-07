@@ -1,4 +1,4 @@
-<div> <h1>P-Particle</h1></div>
+<div> <h1>P-Particle (experimental)</h1></div>
       <div id="aboutmecount">
 		<h2> P-Particle </h2>
 
@@ -47,6 +47,5 @@
 
 <br/>
 
-	see <strong>deprecated</strong>(openGL2 based) code at <a href="https://github.com/perthblank/PParticle">https://github.com/perthblank/PParticle</a>
 
       </div>
