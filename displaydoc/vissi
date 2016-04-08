@@ -1,0 +1,86 @@
+<div> <h1>ViSSI (Visualization System of Swarm Intelligence)</h1></div>
+      <div id="aboutmecount">
+		<h2> ViSSI </h2>
+
+			<h4>Abstract:</h4>
+			Visualization System integrated with practical swarm intelligence and problem model
+			<br/><br/>
+
+			<h4>Parameter:</h4>
+			<ul>
+				<li><strong>OS:</strong> Windows </li>
+				<li><strong>Compiler:</strong> 32-bit Visual C++ </li>
+			</ul>
+			<br/><br/>
+
+			<h4>Method List:</h4>
+			<ul>
+				<li><strong>PSO </strong> (done) </li>
+				<li><strong>PSO-discrete </strong> (processing) </li>
+				<li><strong>ACO </strong> (processing) </li>
+			</ul>
+			<br/><br/>
+			
+			<h4>Model List:</h4>
+			<ul>
+				<li><strong>2D Benchmarks </strong> (done) </li>
+				<li><strong>3D Benchmarks </strong> (done) </li>
+				<li><strong>Coverage Problem </strong> (done) </li>
+				<li><strong>Lins Problem </strong> (processing) </li>
+				<li><strong>TSP </strong> (processing) </li>
+				<li><strong>Path Planning </strong> (processing) </li>
+			</ul>
+			<br/><br/>
+			
+			<h4>Code:</h4>
+			<p>
+			32-bit code available at 
+				<a href="https://github.com/perthblank/ViSSI/tree/master/ViSSI32">
+				https://github.com/perthblank/ViSSI/tree/master/ViSSI32
+				</a>
+			</p>
+
+			<h4>Demo:</h4>
+			<img src="images/vissi/main_window.png"/>
+			<br/>
+			Main Window: Configure method and model
+			
+			<br/>
+			<br/>
+			<br/>
+			<img src="images/vissi/cp3d.png"/>
+			<br/>
+			Control Panel: various of functions
+			
+			<br/>
+			<br/>
+			<br/>
+			<img src="images/vissi/eggholder.png"/>
+			<br/>
+			Eggholder function(2D) visualization
+			
+			<br/>
+			<br/>
+			<br/>
+			<img src="images/vissi/sphere.png"/>
+			<br/>
+			Sphere Function(2D) visualization
+			
+			<br/>
+			<br/>
+			<br/>
+			<img src="images/vissi/sphere3d0.gif"/>
+			<br/>
+			Sphere Function(3D) visualization
+			
+			<br/>
+			<br/>
+			<br/>
+			<img src="images/vissi/coverage.gif"/>
+			<br/>
+			Coverage Problem
+
+<br/>
+
+
+      </div>
