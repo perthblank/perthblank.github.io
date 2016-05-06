@@ -26,11 +26,11 @@
 			
 			<h4>Model List:</h4>
 			<ul>
-				<li><strong>2D Benchmarks </strong> (done) </li>
-				<li><strong>3D Benchmarks </strong> (done) </li>
-				<li><strong>Coverage Problem </strong> (done) </li>
+				<li><strong>2D Benchmarks </strong>  </li>
+				<li><strong>3D Benchmarks </strong>  </li>
+				<li><strong>Coverage Problem </strong>  </li>
 				<li><strong>TSP </strong>  </li>
-				<li><strong>Path Planning </strong> (processing) </li>
+				<li><strong>Path Planning </strong>  </li>
 			</ul>
 			<br/><br/>
 			
@@ -102,6 +102,13 @@
 			<img src="images/vissi/tsp.gif"/>
 			<br/>
 			TSP (on ACO)
+			
+			<br/>
+			<br/>
+			<br/>
+			<img src="images/vissi/aco_path.gif"/>
+			<br/>
+			Grid based path planning
 
 <br/>
 
