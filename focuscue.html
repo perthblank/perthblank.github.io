@@ -1,0 +1,220 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+
+function frontOp(v)
+{
+	$("#front").css("opacity",v);
+}
+
+function rearOp(v)
+{
+	$("#rear").css("opacity",v);
+}
+
+function frontBlur(v)
+{
+	$("#front").css("filter","blur("+(v)+"px)");
+}
+
+function rearBlur(v)
+{
+
+	$("#rear").css("filter","blur("+(v)+"px)");
+}
+
+function mainBarchange(v)
+{
+	$("#ts1").slider("value",45-v/4)
+	$("#ts2").slider("value",100-v/4.2)
+	$("#ts3").slider("value",v)
+	$("#ts4").slider("value",90-v)
+}
+
+$( function() {
+     $( "#s1" ).slider({min:0,max:100,value:0,
+   	 slide:function(e,u){
+   		var v = $("#s1").slider( "value" )
+   		mainBarchange(v)
+   	 }, 
+   	});
+
+    $( "#ts1" ).slider({min:0,max:100,value:0,
+   	 slide:function(e,u){
+   		var v = $("#ts1").slider( "value" )
+   		$("#front").css("opacity",v/100);
+   	 }, 
+   	 change:function(e,v)
+   	 {
+   		var v = $("#ts1").slider( "value" )
+   		frontOp(v/100)
+   	 }
+   	});
+
+   $( "#ts2" ).slider({min:0,max:100,value:0,
+   	 slide:function(e,u){
+   		var v = $("#ts2").slider( "value" )
+   		$("#rear").css("opacity",v/100);
+   	 }, 
+   	 change:function(e,v)
+   	 {
+   		var v = $("#ts2").slider( "value" )
+   		rearOp(v/100)
+   	}
+   	});
+
+
+   $( "#ts3" ).slider({min:0,max:100,value:0,
+   	 slide:function(e,u){
+   		var v = $("#ts3").slider( "value" )
+   		$("#front").css("filter","blur("+v/50+"px)");
+   	 }, 
+   	 change:function(e,v)
+   	 {
+   		var v = $("#ts3").slider( "value" )
+   		frontBlur(v/50)
+   	}
+   	});
+
+
+  $( "#ts4" ).slider({min:0,max:100,value:0,
+   	 slide:function(e,u){
+   		var v = $("#ts4").slider( "value" )
+   		$("#rear").css("filter","blur("+v/50+"px)");
+   	 }, 
+   	 change:function(e,v)
+   	 {
+   		var v = $("#ts4").slider( "value" )
+   		rearBlur(v/50)
+   	}
+   	});
+
+  mainBarchange(0)
+});
+
+
+</script>
+
+
+
+<style>
+
+body
+{
+	padding-bottom:100px;
+}
+
+.display
+{
+	width:400px;
+}
+
+#cont
+{
+	position:absolute
+}
+
+#front
+{
+	width:720px;
+	height:550px;
+	opacity:0.5;
+	left:0;
+	bottom:0;
+	position:absolute;
+}
+
+#rear
+{
+	width:715px;
+	height:540px;
+	opacity:1;
+	left:0px;
+	bottom:0
+}
+
+.slider
+{
+	width:400px;
+}
+
+.sc
+{
+	margin:40px;
+	margin-left:750px;
+}
+</style>
+</head>
+
+<body>
+<h1>
+Focus cue demo
+</h1>
+<p>
+Slide the focus distance bar to change distance
+</p>
+<div id="cont">
+<img id="rear" src="images/op/22.png"/>
+<img id="front" src="images/op/21.png"/>
+</div>
+
+
+<div class="sc">
+<p>
+<b>
+Focus Distance
+</b>
+</p>
+<div class="slider" id="s1"></div>
+</div>
+
+
+<div class="sc">
+<p>
+Front opacity
+</p>
+<div class="slider" id="ts1"></div>
+</div>
+
+<div class="sc">
+<p>
+Rear opacity
+</p>
+<div class="slider" id="ts2"></div>
+</div>
+
+<div class="sc">
+<p>
+Front blur
+</p>
+<div class="slider" id="ts3"></div>
+</div>
+
+<div class="sc">
+<p>
+Rear blur
+</p>
+<div class="slider" id="ts4"></div>
+</div>
+
+<!--
+<div style="margin-top:200px">
+Front:
+<img class="display" src="images/op/21.png"/>
+Rear:
+<img class="display" src="images/op/22.png"/>
+</div>
+-->
+
+<p style="margin-top:200px">
+Reference & image copyright: Huang, Fu-Chung, David Luebke, and Gordon Wetzstein. "The light field stereoscope." ACM SIGGRAPH Emerging Technologies 24 (2015).
+</p>
+</body>
+
+
+</html>
