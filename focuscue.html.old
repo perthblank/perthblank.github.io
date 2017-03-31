@@ -146,14 +146,8 @@ body
 .sc
 {
 	margin:40px;
+	margin-left:750px;
 }
-
-
-.hide
-{
-	display:none;
-}
-
 </style>
 </head>
 
@@ -164,49 +158,44 @@ Focus cue demo
 <p>
 Slide the focus distance bar to change distance
 </p>
-
-<p >
-Reference & image copyright: Huang, Fu-Chung, David Luebke, and Gordon Wetzstein. "The light field stereoscope." ACM SIGGRAPH Emerging Technologies 24 (2015).
-</p>
-
-<div class="sc">
-<p>
-<b>
-Focus Distance (near <--> far)
-</b>
-</p>
-<div class="slider" id="s1"></div>
-</div>
-
-
 <div id="cont">
 <img id="rear" src="images/op/22.png"/>
 <img id="front" src="images/op/21.png"/>
 </div>
 
 
-<div class="sc hide">
+<div class="sc">
+<p>
+<b>
+Focus Distance
+</b>
+</p>
+<div class="slider" id="s1"></div>
+</div>
+
+
+<div class="sc">
 <p>
 Front opacity
 </p>
 <div class="slider" id="ts1"></div>
 </div>
 
-<div class="sc hide">
+<div class="sc">
 <p>
 Rear opacity
 </p>
 <div class="slider" id="ts2"></div>
 </div>
 
-<div class="sc hide">
+<div class="sc">
 <p>
 Front blur
 </p>
 <div class="slider" id="ts3"></div>
 </div>
 
-<div class="sc hide">
+<div class="sc">
 <p>
 Rear blur
 </p>
@@ -222,6 +211,9 @@ Rear:
 </div>
 -->
 
+<p style="margin-top:200px">
+Reference & image copyright: Huang, Fu-Chung, David Luebke, and Gordon Wetzstein. "The light field stereoscope." ACM SIGGRAPH Emerging Technologies 24 (2015).
+</p>
 </body>
 
 

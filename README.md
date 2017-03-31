@@ -1,2 +1,2 @@
-Page available at [http://perthblank.in](http://perthblank.in)
+Personal Page available at https://perthblank.github.io
 
