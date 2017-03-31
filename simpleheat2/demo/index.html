@@ -17,11 +17,13 @@
 <p>
     <strong>simpleheat2</strong> is improved 
     <a href="https://github.com/mourner/simpleheat">mourner / simpleheat</a>
+    <br/>
+    when choose "average", minimize blur to get better appearance and performance
 </p>
 <div class="container">
     <div class="options">
         <label>Radius </label><input type="range" id="radius" value="40" min="10" max="50" /><br />
-        <label>Blur </label><input type="range" id="blur" value="15" min="10" max="50" /> <br />
+        <label>Blur </label><input type="range" id="blur" value="0" min="0" max="50" /> <br />
         <table>
             <tr>
                 <td><input id="superimposed" type="radio" name="mixType" checked="true" ></td> 
@@ -47,7 +49,7 @@ function get(id) {
     return document.getElementById(id);
 }
 
-var heat = simpleheat('canvas').data(data).max(18).radius(40),
+var heat = simpleheat('canvas').data(data).max(18).radius(40,0),
     frame;
 
 function draw() {
