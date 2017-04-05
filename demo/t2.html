@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 70;
+
+      context.beginPath();
+      context.arc(radius, radius, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'yellow';
+      context.fill();
+      //context.lineWidth = 0;
+      //context.strokeStyle = '#003300';
+
+      var data = context.getImageData(0,0,radius, radius);
+      for(var i = 0; i<300; ++i)
+        {
+                console.log(
+                        data.data[i+0], 
+                        data.data[i+1], 
+                        data.data[i+2], 
+                        data.data[i+3]);
+}
+    </script>
+  </body>
+</html>      
