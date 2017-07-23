@@ -18,7 +18,7 @@ body {
   font: normal .85em arial, sans-serif;
   background: #222 url(../images/pattern.png);
   color: #000000;
-	padding:50px;
+  padding:50px;
   padding-bottom: 40px;
 }
 
@@ -144,7 +144,7 @@ nav {
 } 
 
 .icon{
-	height:25px;
+  height:25px;
 }
 
 #site_content { 
@@ -382,7 +382,7 @@ ul img {
 
 
 #aboutmecount{
-	padding:20px
+  padding:20px
 }
 
 #aboutmecount img{
@@ -391,18 +391,18 @@ ul img {
 
 
 .divCard{
-	/*
-	font-size:15px;
-	background:rgba(4, 4, 4, 0.2) none repeat scroll 0 0 !important;
+  /*
+  font-size:15px;
+  background:rgba(4, 4, 4, 0.2) none repeat scroll 0 0 !important;
 
-	padding:8px;
-	margin:10px;
-	cursor:pointer;
-	*/
+  padding:8px;
+  margin:10px;
+  cursor:pointer;
+  */
 }
 
 .divCard:hover {
-	cursor:pointer;
+  cursor:pointer;
 }
 
 
@@ -428,25 +428,25 @@ border-radius: 50%;
 }
 
 #dvIntro{
-	float:left;
-	font-size:20px;
+  float:left;
+  font-size:20px;
 }
 
 #dvHeader{
 }
 
 #site_content2{
-	font-size:15px;
+  font-size:15px;
 }
 
 .imgDisMap{
-	width:400px;
+  width:400px;
 }
 
 #footerwrapper{
 }
 
 .tbimg{
-	height:300px
+  height:300px
 }
 
