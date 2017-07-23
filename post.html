@@ -14,17 +14,17 @@
 <body>
   <div id="main">
     <header>
-		<nav>
+    <nav>
         <ul class="lavaLampWithImage" id="lava_menu">
           <li class="current"><a href="index.html">home</a></li>
-		  <!--
+      <!--
           <li id="btn_project"><a href="index.html#site_content">project</a></li>
-		  -->
+      -->
         </ul>
       </nav>
     </header>
 
-	<br/>
+  <br/>
 
  
 
@@ -34,8 +34,8 @@
 
 </div>
  
-	 <footer>
-	  <div class="inner_copyright">perthblank</div>
+   <footer>
+    <div class="inner_copyright">perthblank</div>
       <p>Protect yourself</p>
     </footer>
 
@@ -44,52 +44,53 @@
  
   </div><!-- mian-->
   <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
 
 <script src="js/ini.js"></script>
 <script>
 var targs = new Array(
-	"about",
-	"nebula",
-	"pparticle",
-	"remote",
-	"glmap",
-	"irr_role",
-	"irr_shoot",
-	"mixer",
-	"particle_sys",
-	"vissi",
-	"focuscue"
+  "about",
+  "nebula",
+  "pparticle",
+  "remote",
+  "glmap",
+  "irr_role",
+  "irr_shoot",
+  "mixer",
+  "particle_sys",
+  "vissi",
+  "focuscue"
 );
 
 function intargs(targ){
-	for(t in targs){
-		if(targs[t] == targ) return true;
-	}
-	return false;
+  for(t in targs){
+    if(targs[t] == targ) return true;
+  }
+  return false;
 }
 
 
 $(document).ready(function(){
 
-	var url = location.search;
-	if(url.indexOf("?")!=-1){
-		var Request = new Object();
-	　　var str = url.substr(1)
-	　　strs= str.split("&");
-	　　for(var i=0;i<strs.length;i++){
-	　　 　 Request[strs[i].split("=")[0]]=
-				unescape(strs[ i].split("=")[1]);
-	　　}
-		if(!Request["targ"] || !intargs(Request["targ"])) 
-			location.href="index.html";
-	
-		loadContent("displaydoc/"+Request["targ"] );
-	}
-	
+  var url = location.search;
+  if(url.indexOf("?")!=-1){
+    var Request = new Object();
+  　　var str = url.substr(1)
+  　　strs= str.split("&");
+  　　for(var i=0;i<strs.length;i++){
+  　　 　 Request[strs[i].split("=")[0]]=
+        unescape(strs[ i].split("=")[1]);
+  　　}
+    if(!Request["targ"] || !intargs(Request["targ"])) 
+      location.href="index.html";
+  
+    loadContent("displaydoc/"+Request["targ"] );
+  }
+  
 });
 
 </script>
