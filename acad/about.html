@@ -1,0 +1,290 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        div {
+            border: 0px solid black
+        }
+        em {
+            font-weight: bold
+        }
+        #dvHeader {
+            padding-right: 30px;
+        }
+        #beta {
+            margin-left: -5px;
+            margin-top: 10px;
+            color: white;
+            font-size: 10px;
+            ;
+            float: right;
+        }
+        #container {
+            top: 52;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            background-color: #F2F2F2;
+        }
+        #tutorial-container {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            overflow-y: scroll;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        .img-tutorial {
+            cursor: pointer;
+        }
+        li a {
+            cursor: pointer;
+        }
+        .ccard {
+            width: 28%;
+            float: left;
+        }
+        .clearBoth {
+            clear: both;
+        }
+        .red {
+            color: red
+        }
+        .green {
+            color: green
+        }
+        .nav-header-t {
+            color: #d0d2d2;
+            font-size: 20px;
+            margin-top: 10px;
+            position: absolute;
+        }
+        #header:hover {
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="css/enhance.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header" id="dvHeader">
+                <a class="navbar-brand" href="http://academicmap.org">Academic Map</a>
+                <div id="beta">
+                    BETA
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="container">
+
+        <div id="tutorial-container">
+            <p style="color:red">
+            <i>
+            Due to insufficient fund, the data server for this website (charges more than $70 a month, which is sort of expensive for a student without income) is temporarily terminated. You can refer to this page about the original utilities. 
+            </i>
+            <br/>
+            If you're really interested in how academicmap works or you need to do some significant search with it, tell me by <b>corey.hdu@gmail.com</b>, I may be willing to start that server for you. (01/30/2017) 
+            </p>
+            <img class="img-tutorial" style="width:80%" src="img/tutorial/am_snap1482934535307.png" />
+            <p>
+            <b><i>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+            (This beta version supports <a href="https://www.google.com/chrome/browser/desktop/index.html">Chrome</a> only)
+                </i></b>
+            </p>
+            <p>
+                <a href="http://academicmap.org"> Academic Map</a> is a search engine to find academic information and their relations with a map
+            </p>
+            <p>
+                Any comment, suggestion and question, please visit the <a target="_blank" href="https://groups.google.com/forum/#!forum/academicmap">Google Group</a> or send us an <a href="#th-about">email</a>
+            </p>
+            <div id="th-menu">
+                -
+                <a href="#th-search">Search</a> -
+                <a href="#th-map">Map</a> -
+                <a href="#th-extend">Extend</a> -
+                <a href="#th-keep">Keep</a> -
+                <a href="#th-path">Path</a> -
+                <a href="#th-share">Share</a> -
+                <a href="#th-about">About</a>
+
+            </div>
+
+            <h3 id="th-search">
+Search
+</h3>
+            <p>
+                1. Search any academic words and people
+            </p>
+            <p>
+                2. Click "Add To Map" button on the card that you want to analyze
+            </p>
+
+            <img style="width:600px" class="img-tutorial" src="img/tutorial/search.png" />
+
+            <h3 id="th-map">
+Map
+</h3>
+            <p>
+                <br/>
+                1. click "Map" tab on the nav bar, you will find the node that was just added. There are two kinds of nodes, <span class="red">reds with photo</span> stand for people, <span class="green">greens</span> stand for research area.
+            </p>
+            <p>
+                <br/>
+                2. right click the node, you can find some options
+            </p>
+
+            <img class="img-tutorial" src="img/tutorial/extend1.png" />
+            <img class="img-tutorial" src="img/tutorial/extend2.png" />
+
+            <p id="th-extend">
+                <br/>
+            2.1 click  <b>"extend -> 1 hop -> Area only " </b> will extend the map by the node by 1 hop of all related areas
+            </p>
+            <img style="width:600px" class="img-tutorial" src="img/tutorial/extend-area.png" />
+
+             <p id="th-extend">
+                <br/>
+            2.2 click  <b>"extend -> 2 hop -> Auto " </b> will extend the map by those most relevent nodes that are 2 hop from the center node
+            </p>
+            <img style="width:600px" class="img-tutorial" src="img/tutorial/extend-auto.png" />
+
+
+            <p>
+                <br/>
+                2.3 click "keep" will keep this very node and remove all other nodes on the map, thus you can start analyzing for this node
+            </p>
+
+
+            <p id="th-keep">
+                <br/>
+                connection between people means they cooperated research paper together, connection between person and research field means the research interest of him or her
+
+            </p>
+
+            <p id="th-path">
+                <br/>
+                2.4 click "path" button to find the networks among nodes
+            </p>
+
+            <!--
+	<img class="img-tutorial" src="img/tutorial/s4.jpg"/>
+-->
+
+            <img style="width:400px" class="img-tutorial" src="img/tutorial/s5.jpg" />
+            <br/>
+            <img style="width:400px" class="img-tutorial" src="img/tutorial/s6.jpg" />
+
+            <p>
+                </br>
+                3. Drag a node to your desired layout and find your ROI
+             </p>
+
+            <img style="width:600px" class="img-tutorial" src="img/tutorial/drag1.png" />
+            <img style="width:600px" class="img-tutorial" src="img/tutorial/drag2.png" />
+
+            <h3 id="th-share">
+Share
+</h3>
+
+            <p>
+                Click "Share" to share the map via those most popular social medias, or download it and do what ever you want!
+            </p>
+            <img class="img-tutorial" src="img/tutorial/share.png" />
+
+            <h3 id="th-about">
+About
+</h3>
+            <h4>
+Composer
+</h4>
+
+            <div class="ccard">
+                <span>
+HUIMIN DU
+</span>
+                <br/> corey.hdu@gmail.com
+            </div>
+
+            <div class="ccard">
+                <span>
+HAIYANG SHI
+</span>
+                <br/> dwyane.shi@gmail.com
+            </div>
+
+            <br class="clearBoth" />
+
+            <br/>
+            <h4>
+Acknowledgement
+</h4>
+    academicmap.org is based on several great projects, include: <br/>
+            <a href="http://sigmajs.org/">Sigma.js</a>
+            <br/>
+            <a href="http://titan.thinkaurelius.com/">Titan Graph DB</a>
+            <br/>
+            <a href="https://github.com/elastic/elasticsearch">Elasticsearch</a>
+            <br/>
+            <a href="http://cassandra.apache.org/">Cassandra</a>
+            <br/>
+            <a href="http://getbootstrap.com/">Bootstrap</a>
+            <br/>
+
+        <p>
+        <br/>
+            Any comment, suggestion and question, please visit the <a target="_blank" href="https://groups.google.com/forum/#!forum/academicmap">Google Group</a> or send us an email
+        </p>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/bs/js/bootstrap.min.js"></script>
+<script src="js/jquery.particleground.js"></script>
+<script src="js/search.js"></script>
+
+<script>
+    var dotColor = "#D9D9D9";
+
+    document.addEventListener('DOMContentLoaded', function() {
+        particleground(document.getElementById('container'), {
+            dotColor: dotColor,
+            lineColor: dotColor,
+            maxSpeedX: 0.1,
+            maxSpeedY: 0.1,
+            minSpeedX: 0.1,
+            minSpeedY: 0.1,
+            parallax: false,
+            density: 20000,
+        });
+    }, false);
+
+    $(".img-tutorial").click(function() {
+        window.open($(this).attr("src"));
+    })
+
+    $("#header").click(function() {
+        window.open("http://academicmap.org")
+    });
+</script>
+
+
+</html>
